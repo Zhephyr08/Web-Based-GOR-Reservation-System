@@ -1,0 +1,242 @@
+body{
+    height: 100%;
+    background: rgba(238, 238, 238, 1);
+}
+
+.nama{
+    position: fixed;
+    top: 10%;
+    left: 27%;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-family: 'Itim';
+    font-weight: 500;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: rgba(64, 64, 64, 1);
+    font-family: 'Itim';
+    font-weight: 500;
+}
+
+.sidebar .text .name {
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    color: white;
+    background: rgba(84, 131, 222, 1);
+}
+
+.sidebar .text .name_1 {
+    position: fixed;
+    top: 95%;
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    color: white;
+    background: rgba(84, 131, 222, 1);
+}
+
+.sidebar li {
+    text-align: center;
+    color: white;
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+}
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidebar text .name :hover{
+    background: rgba(84, 131, 222, 1);
+    transition: all 0.4s ease;
+}
+
+.sidebar li a:hover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    text-decoration: none;
+    border-radius: 6px;
+    background: rgba(84, 131, 222, 1);
+    transition: all 0.4s ease;
+}
+
+.sidebar .text .name{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    /* vertical-align:middle; */
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    color: white;
+    background: rgba(84, 131, 222, 1);
+    /* margin-top: 10px; */
+    list-style: none;
+    display: flex;
+    text-transform: 10px;
+}
+
+.middlebar {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    height: 40px;
+    width: 1000px;
+    display: flex; 
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Itim';
+    font-weight: 500;
+}
+
+.middlebar .text .name {
+    position: fixed;
+    top: 1%;
+    left: 30%;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.middlebar .text .date {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 1%;
+    left: 80%;    
+}
+
+.middlebox_1 {
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    height: 100%;
+    width: 1000px;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 1);
+    height: calc(100vh - 140px); /* Mengatur ketinggian maksimal area tampilan */
+    overflow-y: auto; /* Menambahkan scroll jika konten melebihi ketinggian maksimal */
+}
+
+.tampil{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.tampil h4 {
+    margin-bottom: 0;
+}
+
+.tampil p{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tampil hr{
+    margin: .5rem 1rem 2rem;
+    height: 3px;
+    background-color: black;
+}
+.tampil-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.tampil-container .tampil-item{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+}
+.tampil-container .tampil-item .profil{
+    display: flex;
+    gap: 10px;
+}
+.tampil-item .profil i{
+    padding: 5px;
+    background-color: #D9D9D9;
+    font-size: 30px;
+    border-radius: 20%;
+}
+.tampil-item p{
+    margin: 1rem 0 3rem 0;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: large;
+    
+}
+
+.tampil-item {
+    position: relative;
+  }
+  
+.tanggal {
+    position: absolute;
+    bottom: 1;
+    left: 1;
+    font-size: 20px;
+}
+  
+.rating i {
+    margin-right: 5px;
+    margin-top: 1px;
+    color:#FFD700;
+}
+
+.rating p {
+    margin-bottom: 0;
+}
+
+

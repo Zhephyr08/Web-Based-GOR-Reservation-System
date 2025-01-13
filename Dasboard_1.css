@@ -1,0 +1,435 @@
+body{
+    height: 100vh;
+    background: rgba(238, 238, 238, 1);
+}
+
+.nama{
+    position: fixed;
+    top: 7%;
+    left: 30%;
+    font-size: 22px;
+    font-family: 'Itim';
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.nama_1{
+    position: fixed;
+    z-index: +2;
+    top: 13%;
+    left: 70%;
+    font-size: 22px;
+    font-family: 'Itim';
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    /* padding: 10px 14px; */
+    background: rgba(64, 64, 64, 1);
+    font-family: 'Itim';
+    font-weight: 1000;
+}
+
+.sidebar .text .name {
+    height: 40px;
+    width: 250px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    color: white;
+    background: rgba(84, 131, 222, 1);
+}
+
+.sidebar li {
+    text-align: center;
+    color: white;
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+}
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.sidebar text .name :hover{
+    background: rgba(84, 131, 222, 1);
+    transition: all 0.4s ease;
+}
+
+.sidebar li a:hover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    text-decoration: none;
+    border-radius: 6px;
+    background: rgba(84, 131, 222, 1);
+    transition: all 0.4s ease;
+}
+
+.sidebar .text .name{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    /* vertical-align:middle; */
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    color: white;
+    background: rgba(84, 131, 222, 1);
+    /* margin-top: 10px; */
+    list-style: none;
+    display: flex;
+    text-transform: 10px;
+}
+
+.sidebar text .name_1 :hover{
+    background: rgba(84, 131, 222, 1);
+    transition: all 0.4s ease;
+}
+
+.sidebar .text .name_1{
+    position: fixed;
+    top: 95%;
+    font-size: 16px;
+    height: 40px;
+    width: 250px;
+    color: white;
+    background: rgba(84, 131, 222, 1);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: 10px;
+    font-weight: 500;
+}
+
+.middlebar {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    height: 40px;
+    width: 1000px;
+    display: flex; /* Menjadikan middlebar sebagai flex container */
+    align-items: center; /* Mengatur posisi vertikal elemen di dalam middlebar */
+    background: rgba(255, 255, 255, 1);
+}
+
+.middlebar .text .name {
+    position: fixed;
+    top: 1%;
+    left: 30%;
+    font-size: 16px;
+    font-family: 'Itim';
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.middlebar .text .date {
+    font-size: 16px;
+    font-family: 'Itim';
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 1%;
+    left: 80%;
+}
+
+.middlebox_1 {
+    position: fixed;
+    top: 13%;
+    left: 25%;
+    height: 475px;
+    width: 1000px;
+    display: flex; /* Menjadikan middlebar sebagai flex container */
+    align-items: center; /* Mengatur posisi vertikal elemen di dalam middlebar */
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Itim';
+    font-weight: 500;
+}
+
+
+
+#jadwal {
+    width: 900px;
+    padding: 1rem;
+    margin: 0 3rem;
+    border-radius: 20px;
+    background: rgba(0, 132, 206, 1); /* Tambahkan latar belakang */
+    color: white; /* Warna teks putih untuk kontras */
+}
+
+#jadwal table {
+    width: 100%; /* Mengisi lebar konten */
+    text-align: center; /* Pusatkan teks */
+}
+
+#jadwal td {
+    padding: 10px; /* Ruang antara sel */
+}
+
+#jadwal tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang untuk baris genap */
+}
+
+.h3 p {
+    color: rgb(255, 255, 255);
+    margin: 0; /* Hapus margin default */
+    font-size: 20px; /* Ukuran teks yang sesuai */
+    font-weight: bold; /* Tekanan teks yang lebih kuat */
+}
+
+.open {
+    color: rgb(217, 255, 0);
+    font-size: 20px;
+    font-weight: bold; /* Tekanan teks yang lebih kuat */
+}
+
+
+.middlebox_2_1 {
+    position: fixed;
+    top: 55%;
+    left: 25%;
+    height: 150px;
+    width: 300px;
+    display: flex; /* Menjadikan middlebar sebagai flex container */
+    align-items: center; /* Mengatur posisi vertikal elemen di dalam middlebar */
+    background: rgba(255, 255, 255, 1);
+}
+
+.middlebox_2_1 .box {
+    position: fixed;
+    top: 57.5%;
+    left: 26%;
+    height: 75px;
+    width: 270px;
+    background: rgba(0, 132, 206, 1);
+}
+
+.middlebox_2_1 .box .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 80px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.middlebox_2_2 {
+    position: fixed;
+    top: 55%;
+    left: 48.5%;
+    height: 150px;
+    width: 300px;
+    display: flex; 
+    align-items: center; 
+    background: rgba(255, 255, 255, 1);
+}
+
+.middlebox_2_2 .box {
+    position: fixed;
+    top: 57.5%;
+    left: 50%;
+    height: 75px;
+    width: 250px;
+    background: rgba(0, 132, 206, 1);
+}
+
+.middlebox_2_2 .box .icon{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 80px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.middlebox_2_3 {
+    position: fixed;
+    top: 55%;
+    left: 72%;
+    height: 150px;
+    width: 300px;
+    display: flex; 
+    align-items: center; 
+    background: rgba(255, 255, 255, 1);
+}
+
+.middlebox_2_3 .box {
+    position: fixed;
+    top: 57.5%;
+    left: 73.5%;
+    height: 75px;
+    width: 250px;
+    background: rgba(0, 132, 206, 1);
+}
+
+.middlebox_2_3 .box .icon{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 65px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.box .core1{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    font-family: 'Itim';
+    transform: translateY(-45%);
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.box .core2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-family: 'Itim';
+    transform: translateY(-45%);
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.box .core3{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    font-family: 'Itim';
+    transform: translateY(-45%);
+    padding-bottom: 20px;
+    font-size: 23px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.middlebox_2_1 .SUB{
+    position: fixed;
+    top: 69%;
+    left: 26%;
+    font-family: 'Itim';
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.middlebox_2_2 .SUB{
+    position: fixed;
+    top: 69%;
+    left: 50%;
+    font-family: 'Itim';
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.middlebox_2_3 .SUB{
+    position: fixed;
+    top: 69%;
+    left: 73.5%;
+    font-family: 'Itim';
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.middlebot {
+    position: fixed;
+    top: 80%;
+    left: 25%;
+    height: 150px;
+    width: 1000px;
+    display: flex; /* Menjadikan middlebar sebagai flex container */
+    align-items: center; /* Mengatur posisi vertikal elemen di dalam middlebar */
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Itim';
+    font-weight: 500;
+}
+
+.middlebot .icon{
+    position: fixed;
+    top: 79%;
+    left: 29%;
+    font-size: 100px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.button{
+    position: fixed;
+    top: 87%;
+    left: 75%;
+    height: 50px;
+    width: 200px;
+    border-radius: 55px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Untuk mengatur secara horizontal */
+    align-items: center;     /* Untuk mengatur secara vertikal */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 206, 95, 1);
+}
+
+.button a{
+    color: rgb(0, 0, 0);
+}
+
+.core4{
+    position: fixed;
+    top: 82.5%;
+    left: 40%;
+    font-size: 22px;
+    font-family: 'Itim';
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.sub4{
+    position: fixed;
+    top: 89%;
+    left: 40%;
+    font-size: 18px;
+    font-family: 'Itim';
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+

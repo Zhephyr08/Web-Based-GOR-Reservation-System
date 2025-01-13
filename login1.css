@@ -1,0 +1,153 @@
+body {
+    font-family: 'itim', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--abu-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 16px 2rem;
+}
+nav .beranda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 20px;
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+nav a{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: black;
+}
+
+.container {
+    text-align: center;
+    position: fixed; /* Tambahkan properti position: fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'itim', Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    font-family: 'itim', Arial, sans-serif;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'itim', Arial, sans-serif;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    font-family: 'itim', Arial, sans-serif;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+input,
+label,
+button {
+    font-family: 'itim', Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #666;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -15px;
+    font-size: 12px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #666;
+}

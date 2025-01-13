@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP&family=Quicksand:wght@300..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Itim", cursive;
+    letter-spacing: 1px;
+}
+body{
+    background-image: linear-gradient(to bottom, #585756, #6b6a69, #7e7d7d, #929192, #a6a6a6);
+}
+:root{
+    --abu-color: rgba(64, 64, 64, .8);
+}
+section{
+    width: 100%;
+    background-color: #D9D9D9;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--abu-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 16px 2rem;
+}
+nav .beranda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 20px;
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: white;
+    transform: scale(1.05);
+}
+nav a{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: black;
+}
+#utama{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(gor9.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.utama{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 38, 38, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.utama h1{
+    font-size: 60px;
+    color: white;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+#aturan{
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    padding: 5rem 0;
+}
+.aturan{
+    display: flex;
+    justify-content: space-evenly;
+}
+.member{
+    width: 40%;
+    outline: 1px solid #847F7F;
+    border-radius: 20px;
+}
+.member-container{
+    padding: 1.5rem;
+    height: 100%;
+}
+.member-container h2{
+    text-align: center;
+    margin: 1.5rem 0;
+    font-family: "Abhaya Libre", serif;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.member-container .member-item{
+    padding: .5rem 2.5rem;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(167, 167, 167, .5);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    margin-bottom: 8rem;
+}
+.member-item ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+.member-item ol li{
+    list-style-type: decimal;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+.containerBot{
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+}
+.chatbot{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    background-color: #7ec3ff;
+    display: flex;
+    border-radius: 25px;
+    padding: 2px 8px;
+    outline: 1px solid rgba(0, 0, 0, .5);
+}
+.chatbot img{
+    width: 50px;
+}
+.chatbot p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+/* Untuk layar dengan lebar maksimum 768px (misalnya, perangkat seluler) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Sesuaikan ukuran font */
+    }
+    
+    nav {
+        padding: 16px 1rem; /* Sesuaikan padding */
+    }
+    
+    nav .beranda {
+        font-size: 20px; /* Sesuaikan ukuran font */
+    }
+    
+    nav ul li {
+        padding: 0 10px; /* Sesuaikan padding */
+    }
+    
+    .utama h1 {
+        font-size: 40px; /* Sesuaikan ukuran font */
+    }
+    
+    #aturan {
+        padding: 3rem 0;
+    }
+    .aturan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member {
+        width: 100%; /* Sesuaikan lebar */
+    }
+    
+    .member-container h2 {
+        font-size: 25px; /* Sesuaikan ukuran font */
+    }
+    
+    .member-container .member-item {
+        padding: 1.5rem; /* Sesuaikan padding */
+    }
+    
+    .member-item ol li {
+        font-size: 16px; /* Sesuaikan ukuran font */
+    }
+}
+
+/* Untuk layar dengan lebar maksimum 480px (misalnya, smartphone) */
+@media only screen and (max-width: 480px) {
+    nav .beranda {
+        font-size: 18px; /* Sesuaikan ukuran font */
+    }
+    
+    .utama h1 {
+        font-size: 30px; /* Sesuaikan ukuran font */
+    }
+    
+    .member {
+        width: 90%; /* Sesuaikan lebar */
+    }
+    
+    .member-container h2 {
+        font-size: 20px; /* Sesuaikan ukuran font */
+    }
+    
+    .member-container .member-item {
+        padding: .5rem 1rem; /* Sesuaikan padding */
+    }
+    
+    .member-item ol li {
+        font-size: 14px; /* Sesuaikan ukuran font */
+    }
+}
